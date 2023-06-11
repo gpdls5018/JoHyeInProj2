@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- xml 선언문 -->
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <tlib-version>1.0</tlib-version>
+    <short-name>my</short-name>    
+   
+    <function>
+        <name>getSecretKey</name> <!-- 함수명 -->
+        <function-class>eltaglib.MyTagLib</function-class> <!-- 패키지명.클래스명 -->
+        <function-signature>
+        	java.lang.String getSecretKey(java.lang.String,java.lang.String) <!-- 반환타입 함수명(매개변수 타입) -->
+        </function-signature>
+    </function>
+    
+    <function>
+        <name>verifyToken</name> <!-- 함수명 -->
+        <function-class>eltaglib.MyTagLib</function-class> <!-- 패키지명.클래스명 -->
+        <function-signature>
+        	boolean verifyToken(java.lang.String,java.lang.String,java.lang.String) <!-- 반환타입 함수명(매개변수 타입) -->
+        </function-signature>
+    </function>
+    
+    <function>
+        <name>getToken</name> <!-- 함수명 -->
+        <function-class>eltaglib.MyTagLib</function-class> <!-- 패키지명.클래스명 -->
+        <function-signature>
+        	java.lang.String getToken(jakarta.servlet.http.HttpServletRequest,java.lang.String) <!-- 반환타입 함수명(매개변수 타입) -->
+        </function-signature>
+    </function>
+    
+</taglib> <!-- 루트 엘리먼트 -->
